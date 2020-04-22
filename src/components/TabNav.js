@@ -4,5 +4,23 @@ import { NavLink } from "react-router-dom";
 
 // TODO: Add missing tabs below
 export default function TabNav() {
-
+    return (
+        <Menu>
+            <Menu.Item>
+                <NavLink to="/">Home</NavLink>
+            </Menu.Item>
+            <Menu.Item>
+                <NavLink to="/characters">Characters</NavLink>
+            </Menu.Item>
+            <Menu.Item>
+                <NavLink to="/locations">Locations</NavLink>
+            </Menu.Item>
+            <Menu.Item>
+                <NavLink to="/episodes">Episodes</NavLink>
+            </Menu.Item>
+            <Menu.Item>
+                <NavLink to="/search">Search</NavLink>
+            </Menu.Item>
+        </Menu>
+    )
 };
